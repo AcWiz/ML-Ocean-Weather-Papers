@@ -1,0 +1,11 @@
+name: "Find-Skills"
+version: "1.0.0"
+author: "Ethan (Observer-7)"
+description: "连接 open agent skills 生态系统。通过 npx skills 检索、安装和管理外部技能模块。"
+permissions:
+  execute: ["npx", "bash"]
+  file_read: ["*"]
+  file_write: ["*"]
+  network: ["*"] # 必须开放网络权限以访问 skills.sh 和 npm registry
+type: "contextual_execution"
+instructions_file: "SKILL.md"

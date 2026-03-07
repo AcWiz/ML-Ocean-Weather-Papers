@@ -1,0 +1,10 @@
+name: "Git-Workflows-Master"
+version: "1.0.0"
+author: "Ethan (Observer-7)"
+description: "赋予 Agent 高阶 Git 时间线操作能力。支持 Interactive Rebase, Bisect 自动化漏洞溯源, Worktree 物理隔离等。"
+permissions:
+  execute: ["git", "bash"]
+  file_read: ["*"]
+  file_write: ["*"]
+type: "contextual_execution"
+instructions_file: "SKILL.md"

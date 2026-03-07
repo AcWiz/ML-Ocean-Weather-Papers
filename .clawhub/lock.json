@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "xurl": {
+      "version": "1.0.0",
+      "installedAt": 1772786370641
+    },
+    "obsidian-direct": {
+      "version": "1.0.0",
+      "installedAt": 1772786538295
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1772786680610
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772786730052
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1772786810948
+    }
+  }
+}
