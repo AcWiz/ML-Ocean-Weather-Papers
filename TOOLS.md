@@ -38,3 +38,43 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+---
+
+## 备份与回滚
+
+### 备份命令
+
+```bash
+# 手动备份核心文件
+TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
+BACKUP_DIR=~/.openclaw/backups
+cp ~/.openclaw/workspace/SOUL.md "$BACKUP_DIR/${TIMESTAMP}_SOUL.md"
+```
+
+### 备份位置
+- 目录: `~/.openclaw/backups/`
+- 格式: `{TIMESTAMP}_{FILENAME}.md`
+
+### 恢复备份
+```bash
+# 从备份恢复
+cp ~/.openclaw/backup/2026-03-07_11-03-16_SOUL.md ~/.openclaw/workspace/SOUL.md
+```
+
+---
+
+## 学习日志
+
+### 位置
+- 目录: `~/.openclaw/workspace/.learnings/`
+- 文件:
+  - LEARNINGS.md - 学习与纠正
+  - ERRORS.md - 错误记录
+  - FEATURE_REQUESTS.md - 功能请求
+
+### 格式
+- 学习: [LRN-YYYYMMDD-XXX]
+- 错误: [ERR-YYYYMMDD-XXX]
+- 功能: [FEAT-YYYYMMDD-XXX]
+
