@@ -27,10 +27,10 @@
 |------|------|------|------|--------|
 | 2023 | **GraphCast: Learning skillful medium-range global weather** | Remi Lam, et al. | [arXiv:2212.12794](https://arxiv.org/abs/2212.12794) | GNN, 10-day |
 | 2021 | **Pangu-Weather: A 3D High-Resolution Model** | Kaifeng Bi, et al. | [arXiv:2211.02556](https://arxiv.org/abs/2211.02556) | 3D Transformer |
-| 2024 | **FuXi: Cascaded Weather Forecasting** | Chen Zhou, et al. | [arXiv:2401.02662](https://arxiv.org/abs/2401.02662) | Cascaded, 15-day |
+| 2024 | **FuXi: Cascaded Weather Forecasting** | Chen Zhou, et al. | [arXiv:FuXi: 2306.12873](https://arxiv.org/abs/FuXi: 2306.12873) | Cascaded, 15-day |
 | 2022 | **FourCastNet: A Global Data-driven Weather Model** | Ilya Price, et al. | [arXiv:2208.05419](https://arxiv.org/abs/2208.05419) | Fourier, AFNO |
 | 2023 | **Neural General Circulation Models** | Dmitri Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX: Foundation Model** | Tung Nguyen, et al. | [arXiv:2305.00080](https://arxiv.org/abs/2305.00080) | Foundation |
+| 2023 | **ClimaX: Foundation Model** | Tung Nguyen, et al. | [arXiv:ClimaX: 2301.10343](https://arxiv.org/abs/ClimaX: 2301.10343) | Foundation |
 | 2023 | **NowcastNet: Precipitation Nowcasting** | - | [arXiv:2311.17961](https://arxiv.org/abs/2311.17961) | Extreme events |
 
 ### FourCastNet 系列
@@ -61,7 +61,7 @@
 | 年份 | 论文 | 作者 | 链接 | 关键词 |
 |------|------|------|------|--------|
 | 2023 | **NeuralGCM** | Dmitri Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:2305.00080](https://arxiv.org/abs/2305.00080) | Foundation Model |
+| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:ClimaX: 2301.10343](https://arxiv.org/abs/ClimaX: 2301.10343) | Foundation Model |
 
 ---
 
