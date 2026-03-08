@@ -124,3 +124,39 @@ python ~/.openclaw/workspace/.learnings/academic/web_search.py "关键词"
 ### 已跳过 (安全原因)
 - **agent-browser** - 被 VirusTotal 标记为可疑
 
+
+---
+
+## 学术研究完整系统 (2026-03-08)
+
+### 搜索工具
+```bash
+# 综合搜索
+python3 ~/.openclaw/workspace/.learnings/academic/search/comprehensive_search.py "关键词"
+
+# 自动研究助手
+python3 ~/.openclaw/workspace/.learnings/academic/auto_researcher.py
+```
+
+### 分析工具
+```bash
+# 论文影响力分析
+python3 ~/.openclaw/workspace/.learnings/academic/paper_analyzer.py
+
+# 每日简报生成
+python3 ~/.openclaw/workspace/.learnings/academic/daily_briefing.py
+```
+
+### 验证工具
+```bash
+# 论文验证
+python3 ~/.openclaw/workspace/skills/self-checker/scripts/verify_v3.py
+```
+
+### 自动更新
+```bash
+# 设置每日自动更新
+# 添加到 crontab:
+0 9 * * * python3 ~/.openclaw/workspace/.learnings/academic/update/auto_updater.py --query "machine learning weather"
+```
+
