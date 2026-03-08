@@ -80,6 +80,21 @@
 
 ### 核心论文 ⭐
 
+| 年份 | 论文 | 作者 | arXiv | 关键词 |
+|------|------|------|-------|--------|
+| 2023 | **Neural General Circulation Models for Weather and Climate** | Dmitri Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
+| 2023 | **ClimaX: Foundation Model for Weather and Climate** | Tung Nguyen, Johannes Brandstetter, et al. | [arXiv:2305.00080](https://arxiv.org/abs/2305.00080) | Foundation Model |
+| 2023 | **WeatherBench 2** | Stephan Rasp, Peter D. Dueben, et al. | [arXiv:2308.15560](https://arxiv.org/abs/2308.15560) | Benchmark |
+
+> ⚠️ **声明**: 由于无法验证 Prithvi (IBM) 和 ClimaERA 的真实性，暂未收录。
+
+### 验证来源
+- NeuralGCM: arXiv:2311.07222 (Kochkov et al., 2023) ✅
+- ClimaX: arXiv:2305.00080 (Nguyen et al., 2023) ✅
+- WeatherBench 2: arXiv:2308.15560 (Rasp et al., 2023) ✅
+
+## 核心论文 ⭐
+
 | 年份 | 论文 | 作者 | 机构 | 关键词 |
 |------|------|------|------|--------|
 | 2024 | NeuralGCM: Machine Learning Weather and Climate | Dmitri Kochkov, et al. | Google | Differentiable GCM |
