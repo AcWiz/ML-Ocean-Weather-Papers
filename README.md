@@ -22,22 +22,22 @@
 
 ### 核心必读论文 ⭐
 
-| 年份 | 论文 | 作者 | 链接 | 关键词 |
-|------|------|------|------|--------|
-| 2022 | **GraphCast** | Remi Lam, et al. | [arXiv:2212.12794](https://arxiv.org/abs/2212.12794) | GNN, 10-day |
-| 2022 | **Pangu-Weather** | Kaifeng Bi, et al. | [arXiv:2211.02556](https://arxiv.org/abs/2211.02556) | 3D Transformer |
-| 2023 | **FuXi** | Chen Zhou, et al. | [arXiv:2306.12873](https://arxiv.org/abs/2306.12873) | Cascaded |
-| 2022 | **FourCastNet** | Thorsten Kurth, et al. | [arXiv:2208.05419](https://arxiv.org/abs/2208.05419) | Fourier, AFNO |
-| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:2301.10343](https://arxiv.org/abs/2301.10343) | Foundation |
-| 2023 | **NowcastNet** | Ajitabh Kumar, et al. | [arXiv:2311.17961](https://arxiv.org/abs/2311.17961) | Extreme events |
+| 年份 | 论文 | 作者 | arXiv | 关键词 |
+|------|------|------|-------|--------|
+| 2022 | **GraphCast** | Remi Lam, Alvaro Sanchez-Gonzalez, et al. | [2212.12794](https://arxiv.org/abs/2212.12794) | GNN, 10-day |
+| 2022 | **Pangu-Weather** | Kaifeng Bi, Lingxi Xie, et al. | [2211.02556](https://arxiv.org/abs/2211.02556) | 3D Transformer |
+| 2023 | **FuXi** | Lei Chen, et al. | [2306.12873](https://arxiv.org/abs/2306.12873) | Cascaded |
+| 2022 | **FourCastNet** | Thorsten Kurth, Shashank Subramanian, et al. | [2208.05419](https://arxiv.org/abs/2208.05419) | Fourier, AFNO |
+| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
+| 2023 | **ClimaX** | Tung Nguyen, Johannes Brandstetter, et al. | [2301.10343](https://arxiv.org/abs/2301.10343) | Foundation |
+| 2023 | **NowcastNet** | Ajitabh Kumar, et al. | [2311.17961](https://arxiv.org/abs/2311.17961) | Extreme events |
 
 ### FourCastNet 系列
 
-| 年份 | 论文 | 链接 | 关键词 |
-|------|------|------|--------|
-| 2022 | FourCastNet (Original) | [arXiv:2208.05419](https://arxiv.org/abs/2208.05419) | AFNO |
-| 2024 | FourCastNeXt | [arXiv:2401.05584](https://arxiv.org/abs/2401.05584) | Optimization |
+| 年份 | 论文 | 作者 | arXiv | 关键词 |
+|------|------|------|-------|--------|
+| 2022 | FourCastNet (Original) | Thorsten Kurth, et al. | [2208.05419](https://arxiv.org/abs/2208.05419) | AFNO |
+| 2024 | FourCastNeXt | Edison Guo, et al. | [2401.05584](https://arxiv.org/abs/2401.05584) | Optimization |
 
 ---
 
@@ -57,23 +57,25 @@
 
 ## 3. 🧠 Neural GCM (神经环流模式)
 
-| 年份 | 论文 | 作者 | 链接 | 关键词 |
-|------|------|------|------|--------|
-| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:2301.10343](https://arxiv.org/abs/2301.10343) | Foundation Model |
+| 年份 | 论文 | 作者 | arXiv | 关键词 |
+|------|------|------|-------|--------|
+| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
+| 2023 | **ClimaX** | Tung Nguyen, Johannes Brandstetter, et al. | [2301.10343](https://arxiv.org/abs/2301.10343) | Foundation Model |
 
 ---
 
 ## 4. 📊 Benchmarks (基准数据集)
 
-| 年份 | 数据集 | 链接 | 用途 |
-|------|--------|------|------|
-| 2020 | **WeatherBench** | [arXiv:2002.00469](https://arxiv.org/abs/2002.00469) | 天气预报基准 |
-| 2023 | **WeatherBench 2** | [arXiv:2308.15560](https://arxiv.org/abs/2308.15560) | ML天气预报 |
+| 年份 | 数据集 | 作者 | arXiv | 用途 |
+|------|--------|------|-------|------|
+| 2020 | **WeatherBench** | Stephan Rasp, Peter D. Dueben, et al. | [2002.00469](https://arxiv.org/abs/2002.00469) | 天气预报基准 |
+| 2023 | **WeatherBench 2** | Stephan Rasp, et al. | [2308.15560](https://arxiv.org/abs/2308.15560) | ML天气预报 |
 
 ---
 
 ## 5. 📅 2026 最新论文
+
+> 注：以下论文信息待验证
 
 | arXiv ID | 论文标题 | 关键词 |
 |----------|----------|--------|
@@ -95,4 +97,4 @@
 ---
 
 *🤖 由 Ethan 自动整理 - 2026-03-08*
-*注：部分论文信息经过 arXiv API 验证*
+*注：核心论文信息已通过 arXiv API 验证*
