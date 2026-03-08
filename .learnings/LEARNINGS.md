@@ -119,3 +119,17 @@
 **Files Created**:
 - `~/.learnings/vector_memory/faiss_retriever.py`
 
+
+---
+
+## [LRN-20260308-002] 长时间任务进度显示
+
+**Date**: 2026-03-08
+
+**Task**: 用户建议长时间任务显示进度条
+
+**Implementation**:
+- 以后执行搜索/下载等任务时，用 `[1/N] 任务描述` 格式显示进度
+- 定期汇报当前进度
+
+**Status**: 已应用

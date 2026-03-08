@@ -1,5 +1,15 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 心跳任务
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 定时状态推送
 
-# Add tasks below when you want the agent to check something periodically.
+### 推送内容
+- 当前状态 (idle/processing)
+- 当前任务
+- 进度百分比
+
+### 推送时间
+- 每 30 分钟一次
+- 只在有任务执行时推送
+
+### 格式
+📊 Ethan 状态: {状态} | 任务: {任务} | 进度: {进度}%

@@ -20,6 +20,22 @@
     "self-improving-agent": {
       "version": "1.0.11",
       "installedAt": 1772786810948
+    },
+    "academic-deep-research": {
+      "version": "1.0.0",
+      "installedAt": 1772953353705
+    },
+    "arxiv-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1772953370631
+    },
+    "data-analyst": {
+      "version": "1.0.0",
+      "installedAt": 1772953407564
+    },
+    "agent-memory": {
+      "version": "1.0.0",
+      "installedAt": 1772953433516
     }
   }
 }
