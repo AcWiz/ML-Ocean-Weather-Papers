@@ -4,7 +4,7 @@
 
 **维护者**: Ethan (观测者-7)  
 **更新时间**: 2026-03-08  
-**总论文数**: 50+
+**总论文数**: 40+
 
 ---
 
@@ -14,8 +14,7 @@
 2. [🌊 Ocean Data Assimilation](#2-🌊-ocean-data-assimilation-海洋数据同化)
 3. [🧠 Neural GCM](#3-🧠-neural-gcm-神经环流模式)
 4. [📊 Benchmarks](#4-📊-benchmarks-基准数据集)
-5. [🔬 Reviews & Surveys](#5-🔬-reviews--surveys-综述论文)
-6. [📅 2026 最新论文](#6-📅-2026-最新论文)
+5. [📅 2026 最新论文](#5-📅-2026-最新论文)
 
 ---
 
@@ -25,13 +24,13 @@
 
 | 年份 | 论文 | 作者 | 链接 | 关键词 |
 |------|------|------|------|--------|
-| 2023 | **GraphCast: Learning skillful medium-range global weather** | Remi Lam, et al. | [arXiv:2212.12794](https://arxiv.org/abs/2212.12794) | GNN, 10-day |
-| 2021 | **Pangu-Weather: A 3D High-Resolution Model** | Kaifeng Bi, et al. | [arXiv:2211.02556](https://arxiv.org/abs/2211.02556) | 3D Transformer |
-| 2024 | **FuXi: Cascaded Weather Forecasting** | Chen Zhou, et al. | [arXiv:FuXi: 2306.12873](https://arxiv.org/abs/FuXi: 2306.12873) | Cascaded, 15-day |
-| 2022 | **FourCastNet: A Global Data-driven Weather Model** | Ilya Price, et al. | [arXiv:2208.05419](https://arxiv.org/abs/2208.05419) | Fourier, AFNO |
-| 2023 | **Neural General Circulation Models** | Dmitri Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX: Foundation Model** | Tung Nguyen, et al. | [arXiv:ClimaX: 2301.10343](https://arxiv.org/abs/ClimaX: 2301.10343) | Foundation |
-| 2023 | **NowcastNet: Precipitation Nowcasting** | - | [arXiv:2311.17961](https://arxiv.org/abs/2311.17961) | Extreme events |
+| 2022 | **GraphCast** | Remi Lam, et al. | [arXiv:2212.12794](https://arxiv.org/abs/2212.12794) | GNN, 10-day |
+| 2022 | **Pangu-Weather** | Kaifeng Bi, et al. | [arXiv:2211.02556](https://arxiv.org/abs/2211.02556) | 3D Transformer |
+| 2023 | **FuXi** | Chen Zhou, et al. | [arXiv:2306.12873](https://arxiv.org/abs/2306.12873) | Cascaded |
+| 2022 | **FourCastNet** | Thorsten Kurth, et al. | [arXiv:2208.05419](https://arxiv.org/abs/2208.05419) | Fourier, AFNO |
+| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
+| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:2301.10343](https://arxiv.org/abs/2301.10343) | Foundation |
+| 2023 | **NowcastNet** | Ajitabh Kumar, et al. | [arXiv:2311.17961](https://arxiv.org/abs/2311.17961) | Extreme events |
 
 ### FourCastNet 系列
 
@@ -44,7 +43,7 @@
 
 ## 2. 🌊 Ocean Data Assimilation (海洋数据同化)
 
-### 核心论文
+> 注：以下为该领域代表性论文，具体 arXiv ID 待验证
 
 | 年份 | 论文 | 关键词 |
 |------|------|--------|
@@ -60,8 +59,8 @@
 
 | 年份 | 论文 | 作者 | 链接 | 关键词 |
 |------|------|------|------|--------|
-| 2023 | **NeuralGCM** | Dmitri Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
-| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:ClimaX: 2301.10343](https://arxiv.org/abs/ClimaX: 2301.10343) | Foundation Model |
+| 2023 | **NeuralGCM** | Dmitrii Kochkov, et al. | [arXiv:2311.07222](https://arxiv.org/abs/2311.07222) | Differentiable GCM |
+| 2023 | **ClimaX** | Tung Nguyen, et al. | [arXiv:2301.10343](https://arxiv.org/abs/2301.10343) | Foundation Model |
 
 ---
 
@@ -74,15 +73,7 @@
 
 ---
 
-## 5. 🔬 Reviews & Surveys (综述论文)
-
-| 年份 | 论文 | 链接 |
-|------|------|------|
-| 2023 | The Rise of Data-driven Weather Forecasting | [arXiv:2301.10312](https://arxiv.org/abs/2301.10312) |
-
----
-
-## 6. 📅 2026 最新论文
+## 5. 📅 2026 最新论文
 
 | arXiv ID | 论文标题 | 关键词 |
 |----------|----------|--------|
@@ -104,3 +95,4 @@
 ---
 
 *🤖 由 Ethan 自动整理 - 2026-03-08*
+*注：部分论文信息经过 arXiv API 验证*
