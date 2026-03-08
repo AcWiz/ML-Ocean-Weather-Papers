@@ -7,13 +7,13 @@ from PIL import Image, ImageEnhance, ImageFilter
 import pytesseract
 import numpy as np
 import os
-from pathlib import Path
+import subprocess
 
 class ImageRecognizer:
     """图像识别器"""
     
     def __init__(self):
-        self.tesseract_cmd = None  # 自动检测
+        pass
     
     def recognize_text(self, image_path, lang='eng'):
         """
@@ -27,16 +27,9 @@ class ImageRecognizer:
             str: 识别的文字
         """
         try:
-            image = Image.open(image_path)
-            
-            # 预处理
-            image = self._preprocess(image)
-            
-            # OCR 识别
-            text = pytesseract.image_to_string(image, lang=lang)
-            
+            # 直接使用 tesseract，不做预处理
+            text = pytesseract.image_to_string(Image.open(image_path), lang=lang)
             return text.strip()
-            
         except Exception as e:
             return f"识别失败: {e}"
     
@@ -44,26 +37,14 @@ class ImageRecognizer:
         """识别中文"""
         return self.recognize_text(image_path, lang='chi_sim')
     
-    def _preprocess(self, image):
-        """图像预处理"""
-        # 转换为灰度
-        if image.mode != 'L':
-            image = image.convert('L')
-        
-        # 增加对比度
-        enhancer = ImageEnhance.Contrast(image)
-        image = enhancer.enhance(2)
-        
-        # 去噪
-        image = image.filter(ImageFilter.MedianFilter())
-        
-        return image
-    
-    def get_text_with_boxes(self, image_path):
+    def recognize_with_boxes(self, image_path, lang='eng'):
         """获取带位置信息的文字"""
         try:
-            image = Image.open(image_path)
-            data = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
+            data = pytesseract.image_to_data(
+                Image.open(image_path), 
+                lang=lang,
+                output_type=pytesseract.Output.DICT
+            )
             
             results = []
             n_boxes = len(data['text'])
@@ -81,27 +62,30 @@ class ImageRecognizer:
                     })
             
             return results
-            
         except Exception as e:
             return []
     
-    def extract_info(self, image_path, pattern):
-        """
-        从图片中提取指定信息
-        
-        Args:
-            image_path: 图片路径
-            pattern: 正则表达式
-        
-        Returns:
-            list: 匹配的结果
-        """
-        import re
-        
-        text = self.recognize_text(image_path)
-        matches = re.findall(pattern, text)
-        
-        return matches
+    def preprocess_for_better_ocr(self, input_path, output_path):
+        """预处理图片以提高OCR准确率"""
+        try:
+            img = Image.open(input_path)
+            
+            # 转为灰度
+            if img.mode != 'L':
+                img = img.convert('L')
+            
+            # 增加对比度
+            enhancer = ImageEnhance.Contrast(img)
+            img = enhancer.enhance(2)
+            
+            # 二值化
+            img = img.point(lambda x: 0 if x < 128 else 255, '1')
+            img = img.convert('L')
+            
+            img.save(output_path)
+            return output_path
+        except Exception as e:
+            return None
 
 
 class ImageProcessor:
@@ -109,7 +93,6 @@ class ImageProcessor:
     
     @staticmethod
     def resize(image_path, output_path, size=(800, 600)):
-        """调整图片大小"""
         img = Image.open(image_path)
         img = img.resize(size, Image.Resampling.LANCZOS)
         img.save(output_path)
@@ -117,15 +100,13 @@ class ImageProcessor:
     
     @staticmethod
     def crop(image_path, output_path, box):
-        """裁剪图片"""
         img = Image.open(image_path)
         img = img.crop(box)
         img.save(output_path)
         return output_path
     
     @staticmethod
-    def enhance(image_path, output_path, brightness=1.5, contrast=2.0):
-        """增强图片"""
+    def enhance(image_path, output_path, contrast=2.0, brightness=1.0):
         img = Image.open(image_path)
         
         if brightness != 1.0:
@@ -140,30 +121,46 @@ class ImageProcessor:
         return output_path
     
     @staticmethod
-    def to_grayscale(image_path, output_path):
-        """转为灰度图"""
+    def grayscale(image_path, output_path):
         img = Image.open(image_path)
         img = img.convert('L')
         img.save(output_path)
         return output_path
+    
+    @staticmethod
+    def to_grayscale(image_path):
+        img = Image.open(image_path)
+        return img.convert('L')
 
 
-# 测试
+class ImageAnalyzer:
+    """图像分析器"""
+    
+    @staticmethod
+    def get_dominant_colors(image_path, n=5):
+        img = Image.open(image_path).convert('RGB')
+        img = img.resize((50, 50))
+        
+        import collections
+        pixels = np.array(img).reshape(-1, 3)
+        colors = collections.Counter(map(tuple, pixels))
+        
+        return colors.most_common(n)
+    
+    @staticmethod
+    def get_size(image_path):
+        img = Image.open(image_path)
+        return img.size
+
+
 if __name__ == "__main__":
     import sys
     
     if len(sys.argv) > 1:
-        image_path = sys.argv[1]
-        
         recognizer = ImageRecognizer()
         
-        print("🔍 图像识别测试...")
-        print(f"图片: {image_path}\n")
-        
-        # 识别文字
-        text = recognizer.recognize_text(image_path)
-        
-        print("识别结果:")
-        print(text[:500])
+        print(f"识别: {sys.argv[1]}")
+        text = recognizer.recognize_text(sys.argv[1])
+        print(f"\n结果:\n{text}")
     else:
         print("用法: python image_recognizer.py <图片路径>")
