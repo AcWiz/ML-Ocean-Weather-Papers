@@ -1,0 +1,6 @@
+
+# 每周学术论文自动更新 - 每周日早上9点
+0 9 * * 0 cd ~/.openclaw/workspace/.learnings/academic && python3 search/unified_search.py "machine learning weather" >> ~/.openclaw/workspace/.learnings/academic/update.log 2>&1
+
+# 每周日早上9点15分
+15 9 * * 0 cd ~/.openclaw/workspace/.learnings/academic && python3 search/unified_search.py "deep learning ocean" >> ~/.openclaw/workspace/.learnings/academic/update.log 2>&1
