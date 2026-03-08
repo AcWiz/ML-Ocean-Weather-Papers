@@ -195,3 +195,30 @@ python3 ~/.learnings/academic/academic_search.py "关键词"
 - 集成到 GitHub 项目
 - 设置定时任务
 
+
+---
+
+## [LRN-20260308-005] Google 搜索替代方案探索
+
+**Date**: 2026-03-08
+
+**Issue**: 需要 Google 搜索替代方案
+
+**Attempted Solutions**:
+
+1. ❌ **Google 直接访问** - 反爬虫太强
+2. ❌ **Playwright 模拟** - 被检测到
+3. ❌ **DuckDuckGo** - 返回空结果
+4. ❌ **Bing** - 解析失败
+5. ❌ **SearXNG** - 服务不可用
+6. ❌ **Qwant** - JS 渲染无法解析
+
+**Conclusion**: 
+- Web 搜索难以绕过反爬虫
+- 现有学术 API (arXiv, OpenAlex, CrossRef, IEEE) 已覆盖主要资源
+- 建议用户手动补充 Google Scholar 结果
+
+**Mitigation**:
+- 优化统一搜索，整合已有资源
+- 定期手动更新 Google Scholar 结果
+

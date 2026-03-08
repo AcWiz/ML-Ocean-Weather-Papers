@@ -160,3 +160,29 @@ python3 ~/.openclaw/workspace/skills/self-checker/scripts/verify_v3.py
 0 9 * * * python3 ~/.openclaw/workspace/.learnings/academic/update/auto_updater.py --query "machine learning weather"
 ```
 
+
+---
+
+## 学术搜索系统说明
+
+### 已支持的平台
+
+| 平台 | API | 状态 |
+|------|-----|------|
+| arXiv | ✅ | 直接 API |
+| OpenAlex | ✅ | 直接 API (2亿+) |
+| CrossRef | ✅ | 直接 API (1亿+) |
+| IEEE | ✅ | CrossRef 代理 |
+| Semantic Scholar | ⚠️ | 限流 |
+| Google Scholar | ❌ | 反爬虫 |
+
+### 搜索命令
+```bash
+# 统一搜索
+python3 ~/.openclaw/workspace/.learnings/academic/search/unified_search.py "关键词"
+
+# 单独搜索
+python3 ~/.openclaw/workspace/.learnings/academic/search/arxiv_search.py "关键词"
+python3 ~/.openclaw/workspace/.learnings/academic/search/ieee_search.py "关键词"
+```
+
