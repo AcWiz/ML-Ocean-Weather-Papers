@@ -78,3 +78,31 @@ cp ~/.openclaw/backup/2026-03-07_11-03-16_SOUL.md ~/.openclaw/workspace/SOUL.md
 - 错误: [ERR-YYYYMMDD-XXX]
 - 功能: [FEAT-YYYYMMDD-XXX]
 
+
+---
+
+## 学术搜索配置
+
+### 机构认证 (DLUT)
+- 机构: Dalian University of Technology
+- 邮箱: fenglonghan@mail.dlut.edu.cn
+- 密码: FLHflh@2025 (内存加载，不持久化)
+- 代理: http://192.168.74.1:7890
+
+### 搜索脚本
+```bash
+# 激活环境
+source ~/miniconda/etc/profile.d/conda.sh 
+conda activate vector_mem 
+
+# 学术论文搜索
+python ~/.openclaw/workspace/.learnings/academic/arxiv_search.py "关键词"
+python ~/.openclaw/workspace/.learnings/academic/semantic_scholar.py "关键词"
+python ~/.openclaw/workspace/.learnings/academic/google_scholar.py "关键词"
+
+# HuggingFace 模型搜索
+python ~/.openclaw/workspace/.learnings/academic/huggingface_search.py "关键词"
+
+# 通用网页搜索
+python ~/.openclaw/workspace/.learnings/academic/web_search.py "关键词"
+```

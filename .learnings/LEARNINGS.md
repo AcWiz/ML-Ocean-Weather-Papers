@@ -93,3 +93,29 @@
 - 登录后可创建ML-Ocean-Data-Assimilation仓库
 
 **Reminder**: 下次心跳时提醒用户
+
+---
+
+## [LRN-20260308-001] 向量检索瓶颈自主解决
+
+**Date**: 2026-03-08
+
+**Issue**: lancedb 和 sentence-transformers 安装失败
+- Python 3.8.10 环境
+- lancedb 依赖 pylance 版本不兼容
+- sentence-transformers 包过大，安装超时
+
+**Solution**:
+1. 检查已有包 → 发现 faiss-cpu 1.8.0 已安装
+2. 安装 scikit-learn (成功)
+3. 创建基于 Faiss + TF-IDF 的轻量级向量检索模块
+4. 测试通过，支持搜索和持久化
+
+**Lesson**:
+- 先检查已有资源，再决定安装什么
+- Faiss 足够满足基本向量检索需求
+- 不需要追求最复杂的方案，合适的就是最好的
+
+**Files Created**:
+- `~/.learnings/vector_memory/faiss_retriever.py`
+
