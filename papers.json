@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "total": 50,
+    "updated": "2026-03-08",
+    "categories": [
+      "Weather Forecasting",
+      "Ocean Data Assimilation",
+      "Neural GCM",
+      "Benchmarks",
+      "Reviews"
+    ]
+  },
+  "papers": [
+    {
+      "title": "GraphCast: Learning Medium-Range Global Weather",
+      "year": 2024,
+      "venue": "Nature",
+      "keywords": [
+        "GNN",
+        "weather"
+      ]
+    },
+    {
+      "title": "Pangu-Weather: A 3D Earth-specific Transformer",
+      "year": 2023,
+      "venue": "Nature",
+      "keywords": [
+        "Transformer",
+        "3D"
+      ]
+    },
+    {
+      "title": "FuXi: Cascaded Weather Forecasting",
+      "year": 2024,
+      "venue": "arXiv:2401.02662",
+      "keywords": [
+        "cascaded",
+        "15-day"
+      ]
+    },
+    {
+      "title": "FourCastNet: Neural Weather Model",
+      "year": 2023,
+      "venue": "arXiv:2302.06696",
+      "keywords": [
+        "Fourier",
+        "AFNO"
+      ]
+    },
+    {
+      "title": "NeuralGCM: ML Weather & Climate",
+      "year": 2024,
+      "venue": "arXiv:2306.09867",
+      "keywords": [
+        "GCM",
+        "differentiable"
+      ]
+    },
+    {
+      "title": "ClimaX: Foundation Model for Weather",
+      "year": 2023,
+      "venue": "arXiv:2305.00080",
+      "keywords": [
+        "foundation",
+        "transfer"
+      ]
+    },
+    {
+      "title": "NowcastNet: Extreme Precipitation",
+      "year": 2024,
+      "venue": "Nature",
+      "keywords": [
+        "extreme",
+        "nowcast"
+      ]
+    },
+    {
+      "title": "Neural Variational Ocean DA",
+      "year": 2024,
+      "keywords": [
+        "VAE",
+        "ocean"
+      ]
+    },
+    {
+      "title": "Deep Learning Ocean State Estimation",
+      "year": 2024,
+      "keywords": [
+        "CNN",
+        "LSTM"
+      ]
+    },
+    {
+      "title": "PINN for Ocean Data Assimilation",
+      "year": 2023,
+      "keywords": [
+        "PINN",
+        "physics"
+      ]
+    },
+    {
+      "title": "Transformer Ocean DA",
+      "year": 2023,
+      "keywords": [
+        "Transformer"
+      ]
+    },
+    {
+      "title": "4DVarNet",
+      "year": 2022,
+      "keywords": [
+        "4DVar",
+        "neural"
+      ]
+    }
+  ]
+}
