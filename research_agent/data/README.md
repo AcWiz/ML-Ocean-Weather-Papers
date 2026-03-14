@@ -121,7 +121,7 @@ PINN+DA        ██████████░░░░░░░░░  10+
 ## 📞 联系方式
 
 - GitHub: [AcWiz/ML-Ocean-Weather-Papers](https://github.com/AcWiz/ML-Ocean-Weather-Papers)
-- Email: fenglonghan@mail.dlut.edu.cn
+- Email: 1462396613@qq.com
 
 ---
 
